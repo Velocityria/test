@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 일정</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .calendar-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            border-left: 5px solid #6b8e23;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+        .calendar-header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+            max-width: 800px;
+        }
+        .calendar-table {
+            width: 100%;
+            max-width: 800px;
+            border-collapse: collapse;
+            background-color: #fff;
+            margin-bottom: 40px;
+        }
+        .calendar-table th, .calendar-table td {
+            border: 1px solid #ccc;
+            width: 14.28%;
+            vertical-align: top;
+            padding: 8px;
+        }
+        .calendar-table th {
+            background-color: #e6ecf5;
+            text-align: center;
+            font-weight: bold;
+            height: 30px;
+        }
+        /* 요일별 색상 */
+        .calendar-table th:first-child, .sun { color: #d9534f; } /* 일요일 */
+        .calendar-table th:last-child, .sat { color: #0275d8; }  /* 토요일 */
+        
+        .day-cell {
+            height: 90px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .day-num {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .event-text {
+            font-size: 12px;
+            color: #555;
+            line-height: 1.4;
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="calendar-title">나의 일정</div>
+
+    <div class="calendar-header">◀ 2026년 6월 ▶</div>
+    <table class="calendar-table">
+        <thead>
+            <tr>
+                <th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td><div class="day-cell"><span class="day-num">1</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">2</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">3</span><div class="event-text">지방선거일</div></div></td>
+                <td><div class="day-cell"><span class="day-num">4</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">5</span><div class="event-text">스크팁트 언어실습</div></div></td>
+                <td class="sat"><div class="day-cell"><span class="day-num">6</span><div class="event-text">현충일</div></div></td>
+            </tr>
+            <tr>
+                <td class="sun"><div class="day-cell"><span class="day-num">7</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">8</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">9</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">10</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">11</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">12</span><div class="event-text"></div></div></td>
+                <td class="sat"><div class="day-cell"><span class="day-num">13</span><div class="event-text"></div></div></td>
+            </tr>
+            <tr>
+                <td class="sun"><div class="day-cell"><span class="day-num">14</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">15</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">16</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">17</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">18</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">19</span><div class="event-text"></div></div></td>
+                <td class="sat"><div class="day-cell"><span class="day-num">20</span><div class="event-text"></div></div></td>
+            </tr>
+            <tr>
+                <td class="sun"><div class="day-cell"><span class="day-num">21</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">22</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">23</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">24</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">25</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">26</span><div class="event-text"></div></div></td>
+                <td class="sat"><div class="day-cell"><span class="day-num">27</span><div class="event-text"></div></div></td>
+            </tr>
+            <tr>
+                <td class="sun"><div class="day-cell"><span class="day-num">28</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">29</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">30</span><div class="event-text"></div></div></td>
+                <td></td><td></td><td></td><td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="calendar-header">◀ 2026년 7월 ▶</div>
+    <table class="calendar-table">
+        <thead>
+            <tr>
+                <th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td><td></td><td></td>
+                <td><div class="day-cell"><span class="day-num">1</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">2</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">3</span><div class="event-text"></div></div></td>
+                <td class="sat"><div class="day-cell"><span class="day-num">4</span><div class="event-text"></div></div></td>
+            </tr>
+            <tr>
+                <td class="sun"><div class="day-cell"><span class="day-num">5</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">6</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">7</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">8</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">9</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">10</span><div class="event-text"></div></div></td>
+                <td class="sat"><div class="day-cell"><span class="day-num">11</span><div class="event-text"></div></div></td>
+            </tr>
+            <tr>
+                <td class="sun"><div class="day-cell"><span class="day-num">12</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">13</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">14</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">15</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">16</span><div class="event-text"></div></div></td>
+                <td class="sun"><div class='day-cell'><span class="day-num">17</span><div class="event-text">제헌절</div></div></td>
+                <td class="sat"><div class="day-cell"><span class="day-num">18</span><div class="event-text"></div></div></td>
+            </tr>
+            <tr>
+                <td class="sun"><div class="day-cell"><span class="day-num">19</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">20</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">21</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">22</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">23</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">24</span><div class="event-text"></div></div></td>
+                <td class="sat"><div class="day-cell"><span class="day-num">25</span><div class="event-text"></div></div></td>
+            </tr>
+            <tr>
+                <td class="sun"><div class="day-cell"><span class="day-num">26</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">27</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">28</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">29</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">30</span><div class="event-text"></div></div></td>
+                <td><div class="day-cell"><span class="day-num">31</span><div class="event-text"></div></div></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
